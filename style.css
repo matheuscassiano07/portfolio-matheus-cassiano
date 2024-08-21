@@ -87,7 +87,7 @@ main {
 }
 @media (max-width: 768px) {
   .text-container h1 {
-    font-size: 1.5rem; /* Reduz o tamanho da fonte em dispositivos móveis */
+    font-size: 1.5rem;
     margin-top: 15px;
     margin-bottom: 20px;
   }
@@ -192,20 +192,20 @@ main {
   position: relative;
 }
 
-/* Estilos para a seção de projetos */
+
 .paginaprojetos {
   padding: 50px 20px;
   background-color: #ffffff;
-  text-align: center; /* Centraliza o conteúdo da seção */
+  text-align: center; 
 }
 
 .paginaprojetos .projetos-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Alterar para coluna para garantir que o título fique acima dos projetos */
+  flex-direction: column;
   align-items: center;
-  gap: 20px; /* Espaço entre o título e os projetos */
+  gap: 20px;
 }
 
 .paginaprojetos h2 {
@@ -219,9 +219,9 @@ main {
 .projetos-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex; /* Exibe os projetos em linha */
-  justify-content: space-between; /* Alinha os projetos às extremidades do contêiner */
-  gap: 20px; /* Espaço entre os projetos */
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
 }
 .projeto-quadrado {
   background-color: #f8f8f8;
@@ -234,7 +234,7 @@ main {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  width: 45%; /* Ajuste a largura dos projetos para garantir que eles se encaixem no contêiner */
+  width: 45%; 
 }
 
 
@@ -262,8 +262,6 @@ main {
 }
 
 
-
-/* Estilos para a seção de especialidades */
 .paginaprojetos .especialidades-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -286,16 +284,16 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ajusta o espaço entre o texto e o ícone */
+  justify-content: space-between; 
 }
 
 .paginaprojetos .especialidade-icon {
-  width: 90px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 90px; 
   height: auto;
 }
 
 .paginaprojetos .especialidade-text {
-  flex: 1; /* Faz com que o texto ocupe o espaço restante */
+  flex: 1; 
 }
 
 .paginaprojetos .especialidade h3 {
@@ -309,7 +307,6 @@ main {
   color: #656464;
 }
 
-/* Estilos para a seção sobre mim */
 .paginaprojetos .sobre-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -333,7 +330,7 @@ main {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000; /* Ajuste conforme necessário para garantir que o botão esteja visível */
+  z-index: 1000; 
 }
 
 .custom-button {
@@ -347,25 +344,25 @@ main {
 }
 
 .button-icon {
-  width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 150px;
   height: auto;
-  margin-right: 1px; /* Espaço entre a imagem e o texto */
+  margin-right: 1px;
 }
 .mosaic-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 800px; /* Ajuste o tamanho máximo do container se necessário */
+  max-width: 800px; 
   margin: 0 auto;
-  padding-left: 160px; /* Adiciona um padding à esquerda para mover o container mais para a direita */
+  padding-left: 160px;
 }
 
 .mosaic-item {
   position: relative;
   overflow: hidden;
-  border-radius: 50%; /* Torna a imagem redonda */
-  width: 120px; /* Ajuste o tamanho desejado para a imagem */
-  height: 120px; /* Mantém a altura igual à largura para forma circular */
+  border-radius: 50%; 
+  width: 120px; 
+  height: 120px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   display: flex;
@@ -376,8 +373,8 @@ main {
 .mosaic-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Faz com que a imagem preencha o círculo */
-  border-radius: 50%; /* Garante que a imagem também seja redonda */
+  object-fit: cover; 
+  border-radius: 50%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -393,7 +390,7 @@ main {
   color: #fff;
   text-align: center;
   padding: 5px;
-  border-radius: 50%; /* Torna a sobreposição redonda */
+  border-radius: 50%; 
   transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -401,7 +398,7 @@ main {
 .mosaic-item:hover .mosaic-overlay {
   transform: translateY(0);
 }
-/* Estilos gerais para dispositivos móveis */
+
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -434,7 +431,7 @@ main {
   }
 
   .container_mouse {
-    display: none; /* Oculta o botão do mouse em dispositivos móveis */
+    display: none; 
   }
 
   .paginaprojetos {
@@ -470,7 +467,6 @@ main {
   }
 }
 
-/* Estilos para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   .text-container {
     padding: 40px;
@@ -503,14 +499,12 @@ main {
   }
 }
 
-/* Estilos para desktops */
 @media (min-width: 1025px) {
-  /* Manter os estilos atuais para desktops */
+ 
 }
-/* Estilos gerais para dispositivos móveis */
 @media (max-width: 768px) {
   header {
-    display: none; /* Oculta o cabeçalho em dispositivos móveis */
+    display: none; 
   }
 }
 

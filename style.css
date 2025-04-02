@@ -7,6 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background-color: #ffffff;
 }
 
 header {
@@ -36,7 +37,7 @@ header {
 }
 
 .nav-buttons a {
-  color: #000000;
+  color: #730000;
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -51,7 +52,7 @@ header {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: #c10000;
   transition: width 0.3s;
 }
 
@@ -60,7 +61,7 @@ header {
 }
 
 .nav-buttons a:hover {
-  color: #000000;
+  color: #ee3232;
 }
 
 main {
@@ -74,7 +75,7 @@ main {
 .text-container {
   max-width: 850px;
   padding: 120px;
-  color: #000000;
+  color: #730000;
   margin-top: -30px;
   margin-left: -70px;
 }
@@ -95,7 +96,7 @@ main {
 
 .text-container p {
   font-size: 1.2rem;
-  color: #656464;
+  color: #450000;
 }
 
 .links-container {
@@ -107,7 +108,7 @@ main {
 .links-container a {
   display: inline-block;
   text-decoration: none;
-  color: #000000;
+  color: #730000;
   padding: 10px 20px;
   position: relative;
   font-weight: bold;
@@ -121,7 +122,7 @@ main {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #000000;
+  background-color: #ee3232;
   transition: width 0.3s;
 }
 
@@ -130,12 +131,12 @@ main {
 }
 
 .links-container a:hover {
-  color: #000000;
+  color: #ee3232;
 }
 
 .link-separator {
   margin: 0 15px;
-  color: #656464;
+  color: #c10000;
 }
 
 .right-image {
@@ -162,7 +163,7 @@ main {
 .mouse-btn {
   width: 20px;
   height: 40px;
-  border: 3px solid black;
+  border: 3px solid #730000;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -172,7 +173,7 @@ main {
 .mouse-scroll {
   width: 5px;
   height: 5px;
-  background: black;
+  background: rgb(255, 0, 0);
   border-radius: 50%;
   animation: scrolling13 1s linear infinite;
 }
@@ -211,7 +212,7 @@ main {
 .paginaprojetos h2 {
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #000000;
+  color: #730000;
   text-align: center;
 }
 
@@ -253,12 +254,12 @@ main {
 .projeto-info h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #000000;
+  color: #c10000;
 }
 
 .projeto-info p {
   font-size: 1rem;
-  color: #656464;
+  color: #730000;
 }
 
 
@@ -273,7 +274,7 @@ main {
   font-size: 3rem;
   margin-bottom: 30px;
   text-align: center;
-  color: #000000;
+  color: #730000;
 }
 
 .paginaprojetos .especialidade {
@@ -299,12 +300,12 @@ main {
 .paginaprojetos .especialidade h3 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #000000;
+  color: #730000;
 }
 
 .paginaprojetos .especialidade p {
   font-size: 1rem;
-  color: #656464;
+  color: #450000;
 }
 
 .paginaprojetos .sobre-container {
@@ -318,12 +319,12 @@ main {
   font-size: 3rem;
   margin-bottom: 30px;
   text-align: center;
-  color: #000000;
+  color: #730000;
 }
 
 .paginaprojetos .sobre-container p {
   font-size: 1.2rem;
-  color: #656464;
+  color: #450000;
   line-height: 1.6;
 }
 .custom-button-container {
@@ -331,12 +332,13 @@ main {
   bottom: 20px;
   right: 20px;
   z-index: 1000; 
+  
 }
 
 .custom-button {
   display: flex;
   align-items: center;
-  color: #ffffff; /* Cor do texto */
+  color: #ff0000; /* Cor do texto */
   border-radius: 50px;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -363,7 +365,6 @@ main {
   border-radius: 50%; 
   width: 120px; 
   height: 120px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -457,6 +458,9 @@ main {
   }
 
   .mosaic-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Centraliza verticalmente */
     grid-template-columns: repeat(2, 1fr);
     padding-left: 0;
   }
@@ -464,6 +468,7 @@ main {
   .mosaic-item {
     width: 80px;
     height: 80px;
+    margin: auto; /* Garante centralização dos itens */
   }
 
   .custom-button {

@@ -398,77 +398,9 @@ main {
 .mosaic-item:hover .mosaic-overlay {
   transform: translateY(0);
 }
-@media (max-width: 768px) {
-  header {
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    display: none; 
-  }
 
-  .logo {
-    position: relative;
-    margin-bottom: 10px;
-  }
 
-  .nav-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .text-container {
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .right-image {
-    max-width: 100%;
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .container_mouse {
-    display: none;
-  }
-
-  .paginaprojetos {
-    padding: 20px;
-  }
-
-  .projetos-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projeto-quadrado {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .mosaic-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 0;
-  }
-
-  .mosaic-item {
-    width: 80px;
-    height: 80px;
-  }
-
-  .custom-button {
-    width: 80px;
-    height: 80px;
-  }
-
-  .button-icon {
-    width: 80px;
-  }
-}
-
+/* Estilos para telas médias (769px a 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .text-container {
     padding: 40px;
@@ -503,3 +435,5 @@ main {
     width: 120px;
   }
 }
+
+

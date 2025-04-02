@@ -1,439 +1,76 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.logo {
-  position: absolute;
-  left: 20px;
-}
-
-.logo img {
-  height: 60px;
-}
-
-.nav-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.nav-buttons a {
-  color: #000000;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: color 0.3s, border-bottom 0.3s;
-  position: relative;
-}
-
-.nav-buttons a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #000000;
-  transition: width 0.3s;
-}
-
-.nav-buttons a:hover::after {
-  width: 100%;
-}
-
-.nav-buttons a:hover {
-  color: #000000;
-}
-
-main {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-  margin-top: 60px;
-  padding-left: 20px;
-}
-
-.text-container {
-  max-width: 850px;
-  padding: 120px;
-  color: #000000;
-  margin-top: -30px;
-  margin-left: -70px;
-}
-
-.text-container h1 {
-  font-size: 5rem;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  line-height: 1;
-}
+/* Estilos para telas menores (até 768px) */
 @media (max-width: 768px) {
-  .text-container h1 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 20px;
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none; /* Garante que o header não apareça em telas pequenas */
   }
-}
 
-.text-container p {
-  font-size: 1.2rem;
-  color: #656464;
-}
-
-.links-container {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.links-container a {
-  display: inline-block;
-  text-decoration: none;
-  color: #000000;
-  padding: 10px 20px;
-  position: relative;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.links-container a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #000000;
-  transition: width 0.3s;
-}
-
-.links-container a:hover::after {
-  width: 100%;
-}
-
-.links-container a:hover {
-  color: #000000;
-}
-
-.link-separator {
-  margin: 0 15px;
-  color: #656464;
-}
-
-.right-image {
-  position: absolute;
-  right: 0;
-  top: 0;
-  max-width: 40%;
-  z-index: 200;
-}
-
-.right-image img {
-  max-width: 100%;
-  margin-top: 25px;
-  transform: scaleX(-1);
-}
-
-.container_mouse {
-  position: absolute;
-  bottom: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.mouse-btn {
-  width: 20px;
-  height: 40px;
-  border: 3px solid black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mouse-scroll {
-  width: 5px;
-  height: 5px;
-  background: black;
-  border-radius: 50%;
-  animation: scrolling13 1s linear infinite;
-}
-
-@keyframes scrolling13 {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
+  .logo {
+    position: relative;
+    margin-bottom: 10px;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(10px);
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
-}
 
-.paginaprincipal {
-  position: relative;
-}
-
-
-.paginaprojetos {
-  padding: 50px 20px;
-  background-color: #ffffff;
-  text-align: center; 
-}
-
-.paginaprojetos .projetos-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.paginaprojetos h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: #000000;
-  text-align: center;
-}
-
-
-.projetos-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between; 
-  gap: 20px;
-}
-.projeto-quadrado {
-  background-color: #f8f8f8;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-  width: 45%; 
-}
-
-
-.projeto-quadrado:hover {
-  transform: translateY(-5px);
-}
-
-.projeto-quadrado img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.projeto-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-.projeto-info p {
-  font-size: 1rem;
-  color: #656464;
-}
-
-
-.paginaprojetos .especialidades-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  background-color: #ffffff;
-}
-
-.paginaprojetos .especialidades-container h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #000000;
-}
-
-.paginaprojetos .especialidade {
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-}
-
-.paginaprojetos .especialidade-icon {
-  width: 90px; 
-  height: auto;
-}
-
-.paginaprojetos .especialidade-text {
-  flex: 1; 
-}
-
-.paginaprojetos .especialidade h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-.paginaprojetos .especialidade p {
-  font-size: 1rem;
-  color: #656464;
-}
-
-.paginaprojetos .sobre-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  background-color: #ffffff;
-}
-
-.paginaprojetos .sobre-container h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #000000;
-}
-
-.paginaprojetos .sobre-container p {
-  font-size: 1.2rem;
-  color: #656464;
-  line-height: 1.6;
-}
-.custom-button-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000; 
-}
-
-.custom-button {
-  display: flex;
-  align-items: center;
-  color: #ffffff; /* Cor do texto */
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.button-icon {
-  width: 150px;
-  height: auto;
-  margin-right: 1px;
-}
-.mosaic-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px; 
-  margin: 0 auto;
-  padding-left: 160px;
-}
-
-.mosaic-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%; 
-  width: 120px; 
-  height: 120px; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mosaic-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.mosaic-item:hover img {
-  transform: scale(1.05);
-}
-
-.mosaic-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 50%; 
-  transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.mosaic-item:hover .mosaic-overlay {
-  transform: translateY(0);
-}
-
-
-/* Estilos para telas médias (769px a 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
   .text-container {
-    padding: 40px;
-    max-width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word; /* Garante que os textos longos quebrem corretamente */
   }
 
   .right-image {
-    max-width: 50%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 20px;
+    object-fit: contain; /* Ajusta a imagem para que não ultrapasse os limites */
+  }
+
+  .container_mouse {
+    display: none;
+  }
+
+  .paginaprojetos {
+    padding: 20px;
+    overflow: hidden;
   }
 
   .projetos-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .projeto-quadrado {
+    width: 90%;
+    margin-bottom: 20px;
+    max-width: 100%; /* Impede que ultrapasse a tela */
   }
 
   .mosaic-container {
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
   }
 
   .mosaic-item {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .custom-button {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
 
   .button-icon {
-    width: 120px;
+    width: 80px;
   }
 }
-
-

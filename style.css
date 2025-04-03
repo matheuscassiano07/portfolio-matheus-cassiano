@@ -7,14 +7,14 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #ffffff;
+  background-color: #f4ede5;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #f4ede5;
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -196,7 +196,7 @@ main {
 
 .paginaprojetos {
   padding: 50px 20px;
-  background-color: #ffffff;
+  background-color: #f4ede5;
   text-align: center; 
 }
 
@@ -267,7 +267,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
-  background-color: #ffffff;
+  background-color: #f4ede5;
 }
 
 .paginaprojetos .especialidades-container h2 {
@@ -279,7 +279,7 @@ main {
 
 .paginaprojetos .especialidade {
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background-color: #f4ede5;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -312,7 +312,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px 20px;
-  background-color: #ffffff;
+  background-color: #f4ede5;
 }
 
 .paginaprojetos .sobre-container h2 {
@@ -362,7 +362,6 @@ main {
 .mosaic-item {
   position: relative;
   overflow: hidden;
-  border-radius: 50%; 
   width: 120px; 
   height: 120px; 
   text-decoration: none;
@@ -375,7 +374,6 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  border-radius: 50%;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -388,10 +386,10 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #f4ede5;
   text-align: center;
   padding: 5px;
-  border-radius: 50%; 
+  background: rgba(0, 0, 0, 0.5);
   transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -444,6 +442,12 @@ main {
     padding: 20px;
     overflow: hidden;
   }
+  .paginaprojetos .especialidades-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #730000;
+  }
 
   .projetos-container {
     flex-direction: column;
@@ -466,8 +470,8 @@ main {
   }
 
   .mosaic-item {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     margin: auto; /* Garante centralização dos itens */
   }
 
@@ -483,6 +487,14 @@ main {
 
 /* Estilos para telas médias (769px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none; /* Garante que o header não apareça em telas pequenas */
+  }
+  
   .text-container {
     padding: 40px;
     max-width: 90%;
